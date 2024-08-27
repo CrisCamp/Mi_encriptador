@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Text Encryptor</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#">
+        <img src="./images/logo.svg" alt="Logo" class="logo" />
+      </a>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="encryptor-section">
+        <textarea class="text-input" placeholder="Enter text here"></textarea>
+        <div class="encryptor-warning">
+          <img
+            src="./images/warning.svg"
+            alt="Warning Icon"
+            class="warning-icon"
+          />
+          <p class="warning-text">Only lowercase letters and no accents</p>
+        </div>
+        <div class="button-container">
+          <button type="button" class="btn-encrypt">Encrypt!</button>
+          <button type="button" class="btn-decrypt">Decrypt!</button>
+        </div>
+      </section>
+      <section class="result-card">
+        <div class="card-content">
+          <img
+            src="./images/placeholder.svg"
+            alt="Placeholder Image"
+            class="placeholder-image"
+          />
+          <p class="no-message-text">No message found</p>
+          <p class="instruction-text">
+            Enter the text you want to encrypt or decrypt
+          </p>
+        </div>
+        <textarea class="output-text" readonly></textarea>
+        <button type="button" class="btn-copy">Copy</button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="copyright">&copy; 2024 - Text Encryptor</p>
+    </footer>
+
+    <script src="./js/encryptor.js"></script>
+  </body>
+</html>
